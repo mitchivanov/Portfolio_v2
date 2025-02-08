@@ -1,0 +1,59 @@
+:root {
+  --black: #000000;
+  --dark-blue: #121212;
+  --deep-purple: #1B1B2F;
+  --white: #FFFFFF;
+  --silver: #D3D3D3;
+  --turquoise: #00FFFF;
+  --fuchsia: #FF00FF;
+  --azure-blue: #007BFF;
+  --lime-green: #ADFF2F;
+  --orange: #FF4500;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--dark-blue);
+  color: var(--silver);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: linear-gradient(45deg, var(--turquoise), var(--fuchsia));
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+h1, h2, h3 {
+  color: var(--azure-blue);
+}
+
+a {
+  color: var(--turquoise);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  color: var(--lime-green);
+}
+
+.gradient-purple-orange {
+  background: linear-gradient(45deg, #8E44AD, var(--orange));
+}
+

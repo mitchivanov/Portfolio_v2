@@ -1,0 +1,139 @@
+/* Общие стили футера */
+.footer {
+    background-color: #121212;
+    color: #D3D3D3;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+
+    margin-inline: 2rem;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00FFFF;;
+  }
+  
+  .footer-subtitle {
+    color: #00FFFF;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .footer-text {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .footer-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .footer-nav-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-nav-item {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-link {
+    color: #00FFFF;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-form {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .footer-input {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #D3D3D3;
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  
+  .footer-button {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #00FFFF;;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #D3D3D3;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.footer {
+    animation: fadeInUp 1s ease-out;
+    animation-fill-mode: both;
+}
+
+.footer-section {
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.footer-section:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.footer-section:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.footer-section:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+.footer-social-icons .footer-icon {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-social-icons .footer-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}

@@ -1,0 +1,143 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+    background-color: #121212;;
+    font-family: 'Roboto', sans-serif;
+  
+    color: #D3D3D3;
+  
+    overflow: hidden;
+  
+    scroll-behavior: smooth;
+  
+  
+    margin: 0;
+    height: 100%;
+  }
+  
+  
+  main {
+    margin: 4rem;
+    width: 100%;
+  }
+  
+  section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+  
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  .hero {
+    margin-top: 3rem;
+  }
+  
+  .hero-image {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 80%;
+  }
+  
+  .text-hero {
+    display: block; 
+    margin-top: 30rem; 
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: linear-gradient(to right, #00FFFF, #FF00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .about-me {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: auto; 
+  }
+  
+  .about-me div {
+    margin-top: 1rem;
+  }
+  
+  .about-me p {
+    font-size: 16px; 
+    margin: 6px; 
+    padding: 0;
+    color: #d3d3d365;
+  }
+  
+  .about-me a,
+  .about-me a:hover,
+  .about-me a:visited {
+    text-decoration: none;
+    color: #d3d3d365;
+    border-bottom: none;
+  }
+  
+  .about-me svg {
+    margin-top: 8px; 
+  }
+  
+  
+  .about-me-link {
+    text-decoration: none;
+    color: #d3d3d365;
+    border-bottom: none;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;       
+      transform: translateY(40px);  
+    }
+    100% {
+      opacity: 1;         
+      transform: translateY(0);    
+    }
+  }
+  
+  .fade-in-up {
+    opacity: 0;                
+    animation-name: fadeInUp;   
+    animation-duration: 1s;     
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;          
+  }
+  
+  .hero-text h1 {
+    animation-delay: 0.2s;
+  }
+  
+  .hero-text p {
+    animation-delay: 0.4s;
+  }
+  
+  .hero-text .text-hero {
+    animation-delay: 0.6s;
+  }
+  

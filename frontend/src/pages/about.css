@@ -1,0 +1,82 @@
+body{
+    background-color: #121212;;
+    font-family: 'Roboto', sans-serif;
+
+    color: rgba(211, 211, 211, 0.9);
+
+    margin: 6rem;
+    height: 100%;
+    overflow-y: auto;
+}
+
+main{
+    margin: 0;
+}
+
+h1,h2 {
+    color: rgb(255, 255, 255);
+}
+
+b{
+    color: rgba(131, 124, 124, 0.514);
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    gap: 8rem;
+
+    margin-bottom: 2rem;
+    margin-inline: 8rem;
+    
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.about-text {
+    max-width: 1600px;
+}
+
+.image-container {
+    border-radius: 0;
+    background: none;
+}
+
+.timeline-container{
+    margin-inline: 2rem;
+}
+
+.skills-title{
+    margin-inline: 6rem;
+}
+
+.skills-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-inline: 6rem;
+
+    padding: 2rem;
+
+    border-radius: 12px;
+    background: linear-gradient(
+        45deg,
+        #10141454,
+        rgba(15, 1, 66, 0.2)
+    );
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(59, 42, 42, 0.1);
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+
+    margin: 2rem;
+}
+
